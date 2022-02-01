@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Edit Task</title>
+  </head>
+  <body>
+    <h5 id="taskID">Task ID:</h5>
+    <form id="edit-task">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="completed">Completed:</label>
+        <input type="checkbox" name="completed" id="completed" />
+      </div>
+      <button type="submit">Save</button>
+    </form>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./edit-task.js"></script>
+</html>

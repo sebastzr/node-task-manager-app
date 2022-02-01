@@ -5,14 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager App</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container">
       <div class="content">
         <div class="card">
-          <form action=""></form>
+          <form id="save-task">
+            <div>
+              <label for="name">Task name:</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div>
+              <label for="completed">Completed:</label>
+              <input type="checkbox" name="completed" id="completed" />
+            </div>
+            <div>
+              <button>Save</button>
+            </div>
+          </form>
         </div>
+        <div id="tasks-container" class="tasks-container"></div>
       </div>
     </div>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./tasks.js"></script>
   </body>
 </html>
